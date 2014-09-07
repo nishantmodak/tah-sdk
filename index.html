@@ -10,19 +10,24 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="TAH is a open bluetooth low energy hardware platform" />
 	<meta name="keywords" content="tah, bluetooth, low energy, bluetooth low energy, hardware, open hardware, rhc, revealing hour creations" />
-	<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.dropotron.min.js"></script>
-	<script src="js/skel.min.js"></script>
-	<script src="js/skel-layers.min.js"></script>
-	<script src="js/init.js"></script>
-	<script src="js/mailchimp.js"></script>
+
 	<noscript>
 		<link rel="stylesheet" href="css/skel.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/style-noscript.css" />
 		<!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css"> -->
 	</noscript>
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+
+	<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.dropotron.min.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/skel-layers.min.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/mailchimp.js"></script>	
+	<script src="js/popup.js"></script>
 	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 	<script>
@@ -46,6 +51,7 @@
 			<ul>
 				<li class="current"><a href="index.html">Home</a></li>
 				<li><a href="#main">What is TAH?</a></li>
+				<li><a href="getting_started.html">Start</a></li>
 				<li><a href="#cta" class="button special">Sign Up</a></li>
 			</ul>
 		</nav>
@@ -54,137 +60,122 @@
 	<!-- Banner -->		
 	<section id="banner">
 		
-				<!--
-					".inner" is set up as an inline-block so it automatically expands
-					in both directions to fit whatever's inside it. This means it won't
-					automatically wrap lines, so be sure to use line breaks where
-					appropriate (<br />).
-				-->
-				<div class="inner">
-					
-					<header>
-						<h2><img src="./images/tah.png" width="50px"/> TAH</h2>
-					</header>
-					<p>
-						<strong>Control</strong> <br/>
-						everything<br/>
-						<strong>around you</strong><br/>
-						with a<br/>
-						<strong>smartphone!</strong>
-					</p>
-					<!-- <p>Connect a <br/> <strong>smartphone</strong><br />
-						to anything<br/>
-						around you!<br/>
-					</p> -->
-						<footer>
-							<ul class="buttons vertical">
-								<li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
-							</ul>
-						</footer>
-						
-					</div>
-					
-				</section>
+		<div class="inner inner_custom">
+			
+			<header>
+				<h2><img src="./images/tah.png" width="50px" id="tah_logo"/> TAH</h2>
+			</header>
+			<p>
+				<strong>Control</strong> <br/>
+				everything<br/>
+				<strong>around you</strong><br/>
+				with a<br/>
+				<strong>smartphone!</strong>
+			</p><br/>
+			
+			<span id="play_video">
+				<img src="images/videoPlayButton.png" height="40" class="video" href="https://www.youtube.com/watch?v=_u4E1G7WZiE"/><br/>
+			</span>
+
+			<footer>
+				<ul class="buttons vertical">
+					<li><a href="#main" class="button fit scrolly">Tell Me More</a></li>
+				</ul>
+			</footer>
 				
-				<!-- Main -->
-				<article id="main">
+		</div>
+			
+	</section>
 
-					<header class="special container">
-						<!-- <span class="icon fa-bar-chart-o"></span> -->
-						<span class="icon"><img src="./images/tah_new.png" width="50px"/></span>
-						<!-- <img src="/home/nm/projects/tah/parallax/images/tah.png" width="50px" /> -->
-						<h2>This is <strong>TAH</strong>, a BLE device<br />
-							that directly connects to your smartphone.</h2>
-							<p> It is now <strong>easier than ever</strong> to connect your  <strong>smartphone to any</strong> device.<br/>
-								Its frugal power requirements make it ideal for a lot of applications that were not possible earlier.<br/></p>
-							</header>
+		<!-- Main -->
+		<article id="main">
 
-							<!-- Two -->
-							<section class="wrapper style1 container special">
-								<div class="row">
-									<div class="4u">
-										
-										<section>
-											<span class="icon feature fa-check"></span>
-											<header>
-												<h3><strong>Arduino</strong> Compatible</h3>
-											</header>
-											<p><strong>TAH</strong> is Arduino at heart ❤<br/>A TAH breakout board allows you to use all your existing Arduino shields with TAH.</p>
-										</section>
-										
-									</div>
-									<div class="4u">
-										
-										<section>
-											<span class="icon feature fa-check"></span>
-											<header>
-												<h3><strong>Smartphone</strong> Compatible</h3>
-											</header>
-											<p>Directly connects to your smartphone ☎<br/>
-												Open Software SDK allows you to use it as a LEGO brick in the entire solution.
-											</p>
-										</section>
-										
-									</div>
-									<div class="4u">
-										
-										<section>
-											<span class="icon feature fa-check"></span>
-											<header>
-												<h3><strong>iBeacon</strong> Compatible</h3>
-											</header>
-											<p><strong>TAH</strong> can act as an iBeacon.<br/>
-												It can provide you with contextual location notifications on your smartphone.</p>
-											</section>
-											
-										</div>
-									</div>
-								</section>
+		<header class="special container">
+			<!-- <span class="icon fa-bar-chart-o"></span> -->
+			<span class="icon"><img src="./images/tah_new.png" width="50px"/></span>
+			<!-- <img src="/home/nm/projects/tah/parallax/images/tah.png" width="50px" /> -->
+			<h2>This is <strong>TAH</strong>, a BLE device<br />
+				that directly connects to your smartphone.</h2>
+			<p> It is now <strong>easier than ever</strong> to connect your  <strong>smartphone to any</strong> device.<br/>
+				Its frugal power requirements make it ideal for a lot of applications that were not possible earlier.<br/></p>
+		</header>
 
-							</article>
+		<!-- Two -->
+		<section class="wrapper style1 container special">
+			<div class="row">
+				<div class="4u">
+					
+					<section>
+						<span class="icon feature fa-check"></span>
+						<header>
+							<h3><strong>Arduino</strong> Compatible</h3>
+						</header>
+						<p><strong>TAH</strong> is Arduino at heart ❤<br/>A TAH breakout board allows you to use all your existing Arduino shields with TAH.</p>
+					</section>
 
-							<!-- CTA -->
-							<section id="cta">
-								
-								<header>
-									<h2>Want to hear <strong>more</strong>?</h2>
-									<p>Sign Up for our newsletter.</p>
-								</header>
-								<footer>
+				</div>
+				<div class="4u">
 
-									<form action="http://revealinghour.us8.list-manage.com/subscribe/post?u=bca3a340d44da6d9f4123ed9d&amp;id=00bbb728bf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-										<ul class="buttons">
-											<li>
-												<li><input type="email" value="" name="EMAIL" class="" id="mc-email" placeholder="Email" required="">
-												</li>
-												<li><input type="submit" value="Go" name="subscribe" id="mc-embedded-subscribe" class="button special">
-												</li>
-												<div id="mce-responses" class="clear">
-													<div class="response" id="mce-error-response" style="display:none"></div>
-													<div class="response" id="mce-success-response" style="display:none"></div>
-												</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-												<div style="position: absolute; left: -5000px;"><input type="text" name="b_bca3a340d44da6d9f4123ed9d_00bbb728bf" tabindex="-1" value=""></div>
-												
-											</form>
-										</li>
-									</ul>
-									<!-- Begin MailChimp Signup Form -->
+					<section>
+						<span class="icon feature fa-check"></span>
+						<header>
+							<h3><strong>Smartphone</strong> Compatible</h3>
+						</header>
+						<p>Directly connects to your smartphone ☎<br/>
+							Open Software SDK allows you to use it as a LEGO brick in the entire solution.
+						</p>
+					</section>
+				</div>
 
-								</footer>
-								
-							</section>
+				<div class="4u">
+					
+					<section>
+						<span class="icon feature fa-check"></span>
+						<header>
+							<h3><strong>iBeacon</strong> Compatible</h3>
+						</header>
+						<p><strong>TAH</strong> can act as an iBeacon.<br/>
+							It can provide you with contextual location notifications on your smartphone.</p>
+					</section>
 
-							<!-- Footer -->
-							<footer id="footer">
-								
-								<ul class="icons">
-									<li><a href="http://twitter.com/tah_io" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="https://www.facebook.com/pages/Tah/633568926721880" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
-									<li><a href="http://github.com/revealinghourcreations" class="icon circle fa-github"><span class="label">Github</span></a></li>
-								</ul>
-								
-								<span class="copyright">&copy; Revealing Hour Creations. All rights reserved. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
-								
-							</footer>
-						</body>
-						</html>
+				</div>
+			</div>
+		</section>
+	</article>
+
+	<!-- CTA -->
+	<section id="cta">
+		<header>
+			<h2>Want to hear <strong>more</strong>?</h2>
+			<p>Sign Up for our newsletter.</p>
+		</header>
+
+		<footer>
+			<form action="http://revealinghour.us8.list-manage.com/subscribe/post?u=bca3a340d44da6d9f4123ed9d&amp;id=00bbb728bf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<ul class="buttons">
+					<li>
+						<li><input type="email" value="" name="EMAIL" class="" id="mc-email" placeholder="Email" required=""></li>
+						<li><input type="submit" value="Go" name="subscribe" id="mc-embedded-subscribe" class="button special"></li>
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>
+						<div style="position: absolute; left: -5000px;"><input type="text" name="b_bca3a340d44da6d9f4123ed9d_00bbb728bf" tabindex="-1" value="">
+						</div>
+					</li>
+				</ul>
+			</form>
+		</footer>
+	</section>
+
+	<footer id="footer">
+		<ul class="icons">
+			<li><a href="http://twitter.com/tah_io" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+			<li><a href="https://www.facebook.com/pages/Tah/633568926721880" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+			<li><a href="http://github.com/revealinghourcreations" class="icon circle fa-github"><span class="label">Github</span></a></li>
+		</ul>
+
+		<span class="copyright">&copy; Revealing Hour Creations. All rights reserved. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+	</footer>
+</body>
+</html>
