@@ -14,8 +14,17 @@
 		background: #f3f6fa;
 	}
 
+	.task-list {
+		list-style: circle;
+		padding: 0 0 0 2em;
+	}
+
 	#tah_logo {
 		margin-bottom: -4%;
+	}
+
+	#tah_powerup {
+		margin-top: -35%;
 	}
 
 
