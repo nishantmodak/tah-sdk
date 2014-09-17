@@ -19,21 +19,49 @@
 			padding: 0.6em 0px !important;
 		}
 	}
-	
+
+	.feature_icons img {
+		margin: 3%;
+	}
+
+	.bullet_features {
+		padding-right: 3%;
+	}
+
+	.landing_custom {
+		margin-top: -2%;
+		font-size: 1.4em;
+	}
 
 	.task-list {
 		list-style: circle;
 		padding: 0 0 0 2em;
 	}
 
-	#tah_logo {
-		margin-bottom: -4%;
-	}
-
 	#tah_powerup {
 		margin-top: -35%;
 	}
 
+	.twitter_feed {
+		margin-top: 5%;
+	}
+
+	.specs {
+		border: 1px solid lightgray;
+		padding: 2% 0% 0% 0%;
+		border-radius: 10px;
+		margin-left: 0%;
+	}
+
+	.single_spec {
+		height: 5em;
+	}
+
+	.spec_details {
+		font-size: 75%;
+		padding-left: 10%;
+		line-height: 1.3em;
+	}
 
 	.inner_custom {
 		padding: 1em 3em 1em 3em !important;
@@ -852,7 +880,7 @@
 		background-position: top left, top right, bottom left, bottom right;
 		background-repeat: no-repeat;
 		background-size: 25em;
-		padding: 7em 0;
+		padding: 1em 0;
 	}
 
 		#main > :last-child {
@@ -889,6 +917,18 @@
 		text-align: center;
 	}
 
+	#features {
+		background-attachment: scroll, scroll, scroll, fixed;
+		background-color: #645862;
+		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../images/banner.jpg");
+		background-position: top left, top right, top left, bottom center;
+		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+		background-size: 25em, 25em, auto, cover;
+		color: white;
+		padding: 5em;
+		text-align: center;
+	}
+
 		#cta header {
 			margin-bottom: 2em;
 		}
@@ -898,7 +938,7 @@
 	#footer {
 		background: #e8eef4;
 		color: #7c8081;
-		padding: 5em 5em 10em 5em;
+		padding: 5em 5em 3em 5em;
 		text-align: center;
 	}
 
