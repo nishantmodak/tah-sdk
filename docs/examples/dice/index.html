@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Docs-Tah-Die</title><link rel="stylesheet" href="/cache/github-dd2e4ab77e94896e4418f4dd1d11ce1efb595fd1.css" />
+  <link rel="stylesheet" href="/cache/github2-f14002c8b8c821aeaeaf37b52de1d6c4d29dc214.css" />
+  <style>
+    .previewPage {
+      margin: 64px auto;
+      width: 920px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="previewPage">
+    <div id="readme" class="announce md">
+      <article class="markdown-body entry-content">
+        <h1>Electronic Die with Tah</h1>
+
+<p>[Image of die]</p>
+
+<p>Tah is a Bluetooth Low Energy open source development platform compatible with the Arduino.</p>
+
+<p>The Tah can be used for doing some interesting projects like the electronic die. Just roll the die and see its face value on your smartphone in realtime!</p>
+
+<h2>Requirements</h2>
+
+<ul class="task-list">
+<li>Tah</li>
+<li>General PCB board</li>
+<li>ADXL335 3-axis accelerometer</li>
+<li>7805 voltage regulator</li>
+<li>3D-printed plastic casing for the die (find one <a href="http://www.thingiverse.com/thing:17963">here</a>)</li>
+<li>9V HW battery</li>
+<li>Male pinheads</li>
+<li>Female pinheads</li>
+<li>Wire stripper</li>
+<li>Soldering gun and soldering metal</li>
+<li>A computer with the Arduino IDE installed</li>
+<li>iPhone 4S and above with the <a href="https://github.com/tah-io/iOS/tree/master/TAH%20Cube">Tah Cube app</a> installed</li>
+</ul><p>[Images of all materials]</p>
+
+<h2>Step 1</h2>
+
+<p>Tah is Arduino-compatible and is programmed using the Arduino IDE, so download and install the IDE from <a href="http://arduino.cc/en/Main/Software#toc2">here</a>.</p>
+
+<p>Cut the PCB per your design and solder the male and female pinheads as shown in the image below. Use the analog pins of the Tah to interface the ADXL335 accelerometer. Here we are using the A2, A3 and A4 analog channels to read the positions of the X, Y and Z axis coordinates. Refer to the ADXL335 accelerometer's <a href="https://www.sparkfun.com/datasheets/Components/SMD/adxl335.pdf">datasheet</a> for details.</p>
+
+<p>[Circuit diagram]</p>
+
+<h2>Step 2</h2>
+
+<p>Connect the LM7805 voltage regulator as per circuit diagram to step down and regulate the constant 5V DC with filter capacitors.</p>
+
+<p>Install the <a href="https://github.com/tah-io/sketches/tree/master/TAH%20Arduino%20Library">Tah Arduino library</a> in the Arduino IDE and compile the <a href="https://github.com/tah-io/sketches/tree/master/TAH_Cube">"Tah Cube"</a> sketch from the examples.</p>
+
+<p>[Soldered PCB Board]</p>
+
+<h2>Step 3</h2>
+
+<ul class="task-list">
+<li>Open the Tah Cube app on your iPhone</li>
+<li>Scan for Bluetooth Devices in the app</li>
+<li>Connect with the device named CUBE</li>
+</ul><p>You can now roll the die to have the numbers show up in the app!</p>
+
+<p>[Images of Die and phone with O/p]</p>
+
+<p>Watch the video.</p>
+      </article>
+    </div>
+  </div>
+  
+  <div>&nbsp;</div>
+  </div>
+</body>
+</html>
