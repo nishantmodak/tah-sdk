@@ -21,7 +21,7 @@
 	}
 
 	.feature_icons img {
-		margin: 3%;
+		margin: 2%;
 	}
 
 	.bullet_features {
@@ -46,11 +46,12 @@
 		margin-top: 5%;
 	}
 
-	.specs {
+	.specs_row {
 		border: 1px solid lightgray;
 		padding: 2% 0% 0% 0%;
 		border-radius: 10px;
 		margin-left: 0%;
+		padding-right: 3%
 	}
 
 	.single_spec {
@@ -917,7 +918,7 @@
 		text-align: center;
 	}
 
-	#features {
+	#tah_features {
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
 		background-image: url("images/light-tl.svg"), url("images/light-tr.svg"), url("images/overlay.png"), url("../images/banner.jpg");
