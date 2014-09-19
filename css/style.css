@@ -35,6 +35,17 @@
 	  position: absolute;
 	}
 
+	.features_title {
+		color: #7c8081;
+		padding-bottom: 5%;
+		font-size: 125%;
+	}
+
+	.pre-order-bg {
+		background-color: #83d3c9 !important;
+	}
+
+
 	body, #skel-layers-wrapper {
 		background: #f3f6fa;
 	}
@@ -46,8 +57,16 @@
 	}
 
 	.feature_icons img {
-		/*margin: 2%;*/
 		padding-left: 0;
+	}
+
+	.spec_heading {
+		font-size: 105%;
+		font-weight: bolder;
+	}
+
+	.campaign_live {
+		padding-top: 2%;
 	}
 
 	.bullet_features {
@@ -74,7 +93,7 @@
 
 	.specs_row {
 		border: 1px solid lightgray;
-		padding: 2% 0% 0% 0%;
+		padding: 2% 0% 2% 0%;
 		border-radius: 10px;
 		margin-left: 0%;
 		padding-right: 3%
