@@ -154,7 +154,7 @@
 				<div class="features_title">GOOD THINGS COME IN SMALL PACKAGES</div>
 				<div class="row">
 					<div class="6u">
-						<img src="./images/TahandLeo.png" width="500" alt="Tah" style="width:70%">
+						<img src="./images/TahandLeo.jpg" width="500" alt="Tah" style="width:70%">
 					</div>
 					<div class="6u skel-cell-important">
 						<div class="row feature_icons">
@@ -182,90 +182,157 @@
 		</section>
 
 		<section id="specs">
-			<div class="wrapper container">
-				<h2 style="text-align:center;">Specs</h2>
-				<div class="row specs_row">
-					<div class="6u">
-
-						<div class="single_spec">
-							<span class="icon fa-check-square-o bullet_features"></span>
-							<span class="spec_heading">ATmega32U4 microcontroller</span>
-							<div class="spec_details">
-								Eliminate the need for a secondary pocessor by utilizing ATmega32U4's built in USB communication and use TAH as a mouse and a keyboard
-							</div>
-						</div>
-
-						<div class="single_spec">
-							<span class="icon fa-check-square-o bullet_features"></span>
-							<span class="spec_heading">Range 10-100 ft</span>
-							<div class="spec_details">
-								The Bluetooth Low Energy chip in Tah easily provides connectivity up to 10 feet and is powerful enough to connect up to 100 feet in the line of sight
-							</div>
-						</div>
-
-						<div class="single_spec">
-							<span class="icon fa-check-square-o bullet_features"></span>
-							<span class="spec_heading">Bluetooth 4.0</span>
-							<div class="spec_details">
-								Wireless access at minimal power
-							</div>
-						</div>
-
-						<div class="single_spec">
-							<span class="icon fa-check-square-o bullet_features"></span>
-							<span class="spec_heading">36mm x 51mm footprint</span>
-							<div class="spec_details">
-								Compact. Powerful. Packed with features
-							</div>
-						</div>
-						
-						<div>
-							<span class="icon fa-check-square-o bullet_features"></span>
-							<span class="spec_heading">SPI and I2C peripherals</span>
-						</div>
-					</div>
-
-					<div class="6u">
-
-						<div class="single_spec">
-							<span class="icon fa-check-square-o bullet_features"></span>
-							<span class="spec_heading">Open source iOS and Android SDKs</span>
-							<div class="spec_details">
-								We have written the SDK and provided you some sample apps for iOS (Android coming soon) so you can get started on quickly
-							</div>
-						</div>
-
-						<div class="single_spec">
-							<span class="icon fa-check-square-o bullet_features"></span>
-							<span class="spec_heading">32KB of flash storage</span>
-							<div class="spec_details">
-								(4KB reserved for the bootloader)
-							</div>
-						</div>
-
-						<div class="single_spec">
-							<span class="icon fa-check-square-o bullet_features"></span>
-							<span class="spec_heading">No programming cable required</span>
-							<div class="spec_details">
-								Just plug it in and get started. It's that simple
-							</div>
-						</div>
-
-						<div class="single_spec">
-							<span class="icon fa-check-square-o bullet_features"></span>
-							<span class="spec_heading">12 digital I/O pins</span>
-							<div class="spec_details">
-								7 of these can be used as PWM
-							</div>
-						</div>
-
-						<div>
-							<span class="icon fa-check-square-o bullet_features"></span>
-							<span class="spec_heading">6 analog I/O pins</span>
-						</div>
-
-					</div>
-				</div>
+			<div class="container">
+				<h2 style="text-align:center;">Specifications</h2>
+        <div class="12u">
+          <table class="comparison_table container">
+            <thead>
+            <tr>
+              <th align="center"></th>
+              <th align="left"> Tah </th>
+              <th> Bleduino </th>
+              <th> RedBearLab Blend Micro </th>
+              <th> Light Blue Bean </th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- <tr>
+	            <td align="center"></td>
+	            <td align="left">
+	            <img src="images/tah.jpg" alt="Tah" /></td>
+	            <td><img src="images/bleduino.jpg" alt="Bleduino" /></td>
+	            <td><img src="images/blend.jpg" alt="Blend" /></td>
+	            <td><img src="images/bean.jpg" alt="Bean" /></td>
+            </tr> -->
+            <tr>
+              <td align="center"> Microcontroller </td>
+              <td align="left"> ATmega32u4</td>
+              <td> ATmega32u4</td>
+              <td> ATmega32u4</td>
+              <td> ATmega328p</td>
+            </tr>
+            <tr>
+              <td align="center"> BLE Chipset</td>
+              <td align="left"> CC2541</td>
+              <td> nRF8001</td>
+              <td> nRF8001</td>
+              <td> LBM313</td>
+            </tr>
+            <tr>
+              <td align="center"> Connector</td>
+              <td align="left"> Onboard male USB</td>
+              <td> Female micro-USB</td>
+              <td> Female micro-USB</td>
+              <td> None</td>
+            </tr>
+            <tr>
+              <td align="center"> Programming cable required</td>
+              <td align="left"> No</td>
+              <td> Yes</td>
+              <td> Yes</td>
+              <td> No (wireless)</td>
+            </tr>
+            <tr>
+              <td align="center"> USB Compatible</td>
+              <td align="left"> 2.0</td>
+              <td> 2.0</td>
+              <td> 2.0</td>
+              <td> No</td>
+            </tr>
+            <tr>
+              <td align="center"> HID Support</td>
+              <td align="left"> Yes</td>
+              <td> Yes</td>
+              <td> Yes</td>
+              <td> No</td>
+            </tr>
+            <tr>
+              <td align="center"> Central + peripheral role support</td>
+              <td align="left"> Yes</td>
+              <td> No</td>
+              <td> No</td>
+              <td> No</td>
+            </tr>
+            <tr>
+              <td align="center"> BLE Beacon Support</td>
+              <td align="left"> Yes</td>
+              <td> No</td>
+              <td> No</td>
+              <td> Yes</td>
+            </tr>
+            <tr>
+              <td align="center"> Open source hardware</td>
+              <td align="left"> Yes</td>
+              <td> Yes</td>
+              <td> Yes</td>
+              <td> Yes</td>
+            </tr>
+            <tr>
+              <td align="center"> Open source software</td>
+              <td align="left"> Yes</td>
+              <td> Yes</td>
+              <td> Yes</td>
+              <td> Yes</td>
+            </tr>
+            <tr>
+              <td align="center"> Clock speed</td>
+              <td align="left">16MHz</td>
+              <td>16MHz</td>
+              <td>8MHz</td>
+              <td>8MHz</td>
+            </tr>
+            <tr>
+              <td align="center"> Flash</td>
+              <td align="left"> 32k</td>
+              <td> 32k</td>
+              <td> 32k</td>
+              <td> 32k</td>
+            </tr>
+            <tr>
+              <td align="center"> Analog inputs</td>
+              <td align="left"> 12</td>
+              <td> 9</td>
+              <td> 10</td>
+              <td> 2</td>
+            </tr>
+            <tr>
+              <td align="center"> PWM</td>
+              <td align="left"> 7</td>
+              <td> 6</td>
+              <td> 6</td>
+              <td> 4</td>
+            </tr>
+            <tr>
+              <td align="center"> Digital I/O</td>
+              <td align="left"> 20</td>
+              <td> 20</td>
+              <td> 17</td>
+              <td> 8</td>
+            </tr>
+            <tr>
+              <td align="center"> Apps</td>
+              <td align="left">TAH, TAH Sensor,TAH Play, TAH Motion Control, TAH RGB, TAH Cube. More apps on the way.</td>
+              <td>Bleduino App</td>
+              <td> ReadBearLab App</td>
+              <td> Lightblue App</td>
+            </tr>
+            <tr>
+              <td align="center"> Website</td>
+              <td align="left"> http://tah.io </td>
+              <td> http://bleduino.cc </td>
+              <td> http://redbearlab.com/blend/ </td>
+              <td> http://punchthrough.com/bean </td>
+            </tr>
+            <tr>
+              <td align="center"> Price</td>
+              <td align="left"> $49</td>
+              <td> $39</td>
+              <td> $34.90</td>
+              <td> $30</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
 			</div>
 		</section>
 

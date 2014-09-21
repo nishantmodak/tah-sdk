@@ -985,9 +985,21 @@
 	}
 
 	.docs h1, h2, h3, h4, h5, h6 {
-		margin-bottom: 0%;
+		/*margin-bottom: 0%;
 		text-transform: none;
-		font-weight: bolder;
+		font-weight: bolder;*/
+	}
+
+	table {
+		margin: 10px 0 15px 0;
+		border-collapse: collapse;
+	}
+	td,th {	
+		border: 1px solid #ddd;
+		padding: 3px 10px;
+	}
+	th {
+		padding: 5px 10px;	
 	}
 
 	.docs a {
