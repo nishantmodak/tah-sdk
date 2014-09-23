@@ -37,8 +37,8 @@
 
 	.features_title {
 		color: #7c8081;
-		padding-bottom: 5%;
-		font-size: 125%;
+		padding-top: 5%;
+		font-size: 110%;
 	}
 
 	.pre-order-bg {
@@ -50,6 +50,17 @@
 		font-size: 75%;
 	}
 
+	#apple_badge {
+		border-bottom: none;
+	}
+
+	#tah_logo {
+		vertical-align: middle;
+	}
+
+	#tah_logo_text {
+		vertical-align: middle;
+	}
 
 	body, #skel-layers-wrapper {
 		background: #f3f6fa;
@@ -61,14 +72,42 @@
 		}
 	}
 
+	.sprite { background: url('sprite.png') no-repeat top left; width: 110px; height: 110px;  } 
+	.sprite.Bluetooth { background-position: 0px 0px;  } 
+	.sprite.Android { background-position: 0px -120px;  } 
+	.sprite.Arduino { background-position: 0px -240px;  } 
+	.sprite.Beacon { background-position: 0px -360px;  } 
+	.sprite.iOS { background-position: 0px -480px;  } 
+	.sprite.OpenSoftware { background-position: 0px -600px;  } 
+	.sprite.PlugPlay { background-position: 0px -720px;  } 
+	.sprite.TahGrey { background-position: 0px -840px;  } 
+	.sprite.USB { background-position: 0px -960px;  } 
+	
 	.example_step {
 		border-bottom: 1px solid lightgray;
 		padding-bottom: 1.4em;
 		margin-bottom: 1.4em;
 	}
 
-	.feature_icons img {
-		padding-left: 0;
+	.feature_icons_std img {
+		/*padding-left: 0;*/
+		/*max-width: 95px;*/
+	}
+
+	#feature_icons_tah {
+		/*margin: 1% 0% 1% 2%;*/
+	}
+
+	.specs_container {
+		margin-bottom:5em
+	}
+
+	#specs_title {
+		padding-top: 3em;
+	}
+
+	.pre-order-button {
+		padding: 0em 0.75em !important;
 	}
 
 	.spec_heading {
@@ -111,7 +150,7 @@
 		border: 1px solid lightgray;
 		padding: 2% 0% 2% 0%;
 		border-radius: 10px;
-		margin-left: 0%;
+		margin: 0.5em !important;
 		padding-right: 3%
 	}
 

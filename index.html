@@ -12,60 +12,44 @@
 	<meta name="keywords" content="tah, bluetooth, low energy, bluetooth low energy, hardware, open hardware, rhc, revealing hour creations" />
 	<link rel="shortcut icon" href="/favicon.ico" />
 
-	<noscript>
-		<link rel="stylesheet" href="css/skel.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/style-noscript.css" />
-		<!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css"> -->
-	</noscript>
+  <noscript>
+    <link rel="stylesheet" href="css/skel.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-noscript.css" />
+    <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css"> -->
+  </noscript>
 
+  <script src="js/application.js"></script>
 	<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.dropotron.min.js"></script>
-	<script src="js/skel.min.js"></script>
-	<script src="js/skel-layers.min.js"></script>
-	<script src="js/init.js"></script>
-	<script src="js/mailchimp.js"></script>	
 	<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-36872186-2', 'auto');
-		ga('require', 'displayfeatures');
-		ga('send', 'pageview');
-	</script>
-	
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->	
 </head>
 <body class="index loading">
 	
 	<!-- Header -->
 	<header id="header" class="alt">
-		<h1 id="logo"><a href="index.html"><img src="./images/tah_new.png" width="30px" id="tah_logo"/></a></h1>
+		<h1 id="logo"><a href="banner"><img src="./images/tah_new.png" width="30px" id="tah_logo"/><span id="tah_logo_text"> TAH BY RHC</span></a></h1>
 		<nav id="nav">
 			<ul>
-				<li class="current"><a href="index.html">Home</a></li>
-				<li><a href="#main">What is Tah?</a></li>
-				<li><a href="#tah_features">Features</a></li>
-				<li><a href="#specs">Specs</a></li>
-				<li class="submenu">
+				<li class="current" id="menu_banner"><a href="index.html">Home</a></li>
+				<li id="menu_what_is_tah"><a href="#main">What is Tah?</a></li>
+				<li id="menu_tah_features"><a href="#tah_features">Features</a></li>
+				<li id="menu_specs"><a href="#specs">Specs</a></li>
+				<!-- <li class="submenu">
           <a href="">Resources</a>
           <ul>
           	<li><a href="blogs/index.html">Blog</a></li>
             <li><a href="http://discuss.tah.io" target="_blank">Discuss</a></li>
             <li><a href="docs/index.html">Docs</a></li>
           </ul>
-        </li>
+        </li> -->
 				<li><a href="https://www.crowdsupply.com/revealing-hour/tah-open-ble-arduino-board" target="_blank" class="button special pre-order-bg">Pre-order now</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<!-- Banner -->
-	<section id="banner">
+	<section id="banner" class="title">
 		
 		<div class="inner inner_custom landing_custom">
 			
@@ -94,7 +78,7 @@
 		</header>
 
 		<!-- Two -->
-		<section class="wrapper style1 container special">
+		<section class="wrapper style1 container special title" id="what_is_tah">
 			<div class="row">
 
 				<div class="3u">
@@ -139,41 +123,41 @@
 			</div>
 			<center>
 				<div>
-					<a href="https://itunes.apple.com/us/app/tah/id909883039?ls=1&mt=8" target="_blank" style="border-bottom:none;"><img src="./images/AppleBadge.png" width="172" height="60" alt="Apple" style="max-width:100%;"></a>
+					<a href="https://itunes.apple.com/us/app/tah/id909883039?ls=1&mt=8" target="_blank" id="apple_badge"><img src="./images/AppleBadge.png" width="172" height="60" alt="Apple" style="max-width:100%;"></a>
 				</div>
 				<div class="campaign_live">
 					<h3>OUR CROWDFUNDING CAMPAIGN IS NOW LIVE ON CROWD SUPPLY!</h3>
-					<div><a href="https://www.crowdsupply.com/revealing-hour/tah-open-ble-arduino-board" target="_blank" class="button special pre-order-bg" style="padding: 0em 0.75em">Pre-order now</a></div>
+					<div><a href="https://www.crowdsupply.com/revealing-hour/tah-open-ble-arduino-board" target="_blank" class="button special pre-order-bg pre-order-button">Pre-order now</a></div>
 				</div>
 			</center>
 		</section>
 
-		<section id="tah_features">
+		<section id="tah_features" class="title">
 			<h2>Features</h2>
 			<div class="wrapper style3 container special">
-				<div class="features_title">GOOD THINGS COME IN SMALL PACKAGES</div>
 				<div class="row">
 					<div class="6u">
-						<img src="./images/TahandLeo.jpg" width="500" alt="Tah" style="width:70%">
+						<img src="./images/compare.jpg" width="500" alt="Tah" style="width:90%">
+            <div class="features_title">GOOD THINGS COME IN SMALL PACKAGES</div>
 					</div>
-					<div class="6u skel-cell-important">
-						<div class="row feature_icons">
+          <div class="6u skel-cell-important">
+						<div class="row feature_icons_std">
 							<div class="4u">
-								<img src="./images/Bluetooth.png" alt="Bluetooth" style="max-width:70%">
-								<img src="./images/Beacon.png" alt="Beacon" style="max-width:70%">
-								<img src="./images/USB.png" alt="USB" style="max-width:70%">
+								<center><div class='sprite Bluetooth'></div></center>
+								<center><div class='sprite Beacon'></div></center>
+								<center><div class='sprite USB'></div></center>
 							</div>
 							
 							<div class="4u">
-								<img src="./images/Arduino.png" alt="Arduino" style="max-width:70%">
-								<img src="./images/TahGrey.png" alt="Arduino" style="max-width:70%; margin: 1% 0% 1% 2%">
-								<img src="./images/OpenSoftware.png" alt="OpenSoftware" style="max-width:70%">
+								<center><div class='sprite Arduino'></div></center>
+								<center><div class='sprite TahGrey'></div></center>
+								<center><div class='sprite OpenSoftware'></div></center>
 							</div>
 
 							<div class="4u">
-								<img src="./images/PlugPlay.png" alt="PlugnPlay" style="max-width:70%">
-								<img src="./images/Android.png" alt="Android" style="max-width:70%">
-								<img src="./images/iOS.png" alt="iOS" style="max-width:70%">
+								<center><div class='sprite PlugPlay'></div></center>
+								<center><div class='sprite Android'></div></center>
+								<center><div class='sprite iOS'></div></center>
 							</div>
 						</div>
 					</div>
@@ -181,170 +165,92 @@
 			</div>
 		</section>
 
-		<section id="specs">
-			<div class="container">
-				<h2 style="text-align:center;">Specifications</h2>
-        <div class="12u">
-          <table class="comparison_table container">
-            <thead>
-            <tr>
-              <th align="center"></th>
-              <th align="left"> Tah </th>
-              <th> Bleduino </th>
-              <th> RedBearLab Blend Micro </th>
-              <th> Light Blue Bean </th>
-            </tr>
-            </thead>
-            <tbody>
-            <!-- <tr>
-	            <td align="center"></td>
-	            <td align="left">
-	            <img src="images/tah.jpg" alt="Tah" /></td>
-	            <td><img src="images/bleduino.jpg" alt="Bleduino" /></td>
-	            <td><img src="images/blend.jpg" alt="Blend" /></td>
-	            <td><img src="images/bean.jpg" alt="Bean" /></td>
-            </tr> -->
-            <tr>
-              <td align="center"> Microcontroller </td>
-              <td align="left"> ATmega32u4</td>
-              <td> ATmega32u4</td>
-              <td> ATmega32u4</td>
-              <td> ATmega328p</td>
-            </tr>
-            <tr>
-              <td align="center"> BLE Chipset</td>
-              <td align="left"> CC2541</td>
-              <td> nRF8001</td>
-              <td> nRF8001</td>
-              <td> LBM313</td>
-            </tr>
-            <tr>
-              <td align="center"> Connector</td>
-              <td align="left"> Onboard male USB</td>
-              <td> Female micro-USB</td>
-              <td> Female micro-USB</td>
-              <td> None</td>
-            </tr>
-            <tr>
-              <td align="center"> Programming cable required</td>
-              <td align="left"> No</td>
-              <td> Yes</td>
-              <td> Yes</td>
-              <td> No (wireless)</td>
-            </tr>
-            <tr>
-              <td align="center"> USB Compatible</td>
-              <td align="left"> 2.0</td>
-              <td> 2.0</td>
-              <td> 2.0</td>
-              <td> No</td>
-            </tr>
-            <tr>
-              <td align="center"> HID Support</td>
-              <td align="left"> Yes</td>
-              <td> Yes</td>
-              <td> Yes</td>
-              <td> No</td>
-            </tr>
-            <tr>
-              <td align="center"> Central + peripheral role support</td>
-              <td align="left"> Yes</td>
-              <td> No</td>
-              <td> No</td>
-              <td> No</td>
-            </tr>
-            <tr>
-              <td align="center"> BLE Beacon Support</td>
-              <td align="left"> Yes</td>
-              <td> No</td>
-              <td> No</td>
-              <td> Yes</td>
-            </tr>
-            <tr>
-              <td align="center"> Open source hardware</td>
-              <td align="left"> Yes</td>
-              <td> Yes</td>
-              <td> Yes</td>
-              <td> Yes</td>
-            </tr>
-            <tr>
-              <td align="center"> Open source software</td>
-              <td align="left"> Yes</td>
-              <td> Yes</td>
-              <td> Yes</td>
-              <td> Yes</td>
-            </tr>
-            <tr>
-              <td align="center"> Clock speed</td>
-              <td align="left">16MHz</td>
-              <td>16MHz</td>
-              <td>8MHz</td>
-              <td>8MHz</td>
-            </tr>
-            <tr>
-              <td align="center"> Flash</td>
-              <td align="left"> 32k</td>
-              <td> 32k</td>
-              <td> 32k</td>
-              <td> 32k</td>
-            </tr>
-            <tr>
-              <td align="center"> Analog inputs</td>
-              <td align="left"> 12</td>
-              <td> 9</td>
-              <td> 10</td>
-              <td> 2</td>
-            </tr>
-            <tr>
-              <td align="center"> PWM</td>
-              <td align="left"> 7</td>
-              <td> 6</td>
-              <td> 6</td>
-              <td> 4</td>
-            </tr>
-            <tr>
-              <td align="center"> Digital I/O</td>
-              <td align="left"> 20</td>
-              <td> 20</td>
-              <td> 17</td>
-              <td> 8</td>
-            </tr>
-            <tr>
-              <td align="center"> Apps</td>
-              <td align="left">TAH, TAH Sensor,TAH Play, TAH Motion Control, TAH RGB, TAH Cube. More apps on the way.</td>
-              <td>Bleduino App</td>
-              <td> ReadBearLab App</td>
-              <td> Lightblue App</td>
-            </tr>
-            <tr>
-              <td align="center"> Website</td>
-              <td align="left"> http://tah.io </td>
-              <td> http://bleduino.cc </td>
-              <td> http://redbearlab.com/blend/ </td>
-              <td> http://punchthrough.com/bean </td>
-            </tr>
-            <tr>
-              <td align="center"> Price</td>
-              <td align="left"> $49</td>
-              <td> $39</td>
-              <td> $34.90</td>
-              <td> $30</td>
-            </tr>
-            </tbody>
-          </table>
+		<section id="specs" class="title">
+      <h2 style="text-align:center;" id="specs_title">Specifications</h2>
+			<div class="container specs_container">
+        <div class="row specs_row">
+          <div class="6u">
+            <div class="single_spec">
+              <span class="icon fa-check-square-o bullet_features"></span>
+              <span class="spec_heading">ATmega32U4 microcontroller</span>
+              <div class="spec_details">
+                 Eliminate the need for a secondary pocessor by utilizing ATmega32U4's built in USB communication and use TAH as a mouse and a keyboard
+              </div>
+             </div>
+             <div class="single_spec">
+              <span class="icon fa-check-square-o bullet_features"></span>
+              <span class="spec_heading">Range 10-100 ft</span>
+              <div class="spec_details">
+                The Bluetooth Low Energy chip in Tah easily provides connectivity up to 10 feet and is powerful enough to connect up to 100 feet in the line of sight
+              </div>
+            </div>
+            <div class="single_spec">
+            <span class="icon fa-check-square-o bullet_features"></span>
+              <span class="spec_heading">Bluetooth 4.0</span>
+              <div class="spec_details">
+                Wireless access at minimal power
+              </div>
+            </div>
+            <div class="single_spec">
+              <span class="icon fa-check-square-o bullet_features"></span>
+              <span class="spec_heading">36mm x 51mm footprint</span>
+              <div class="spec_details">
+                Compact. Powerful. Packed with features
+              </div>
+            </div>
+             
+            <div>
+              <span class="icon fa-check-square-o bullet_features"></span>
+              <span class="spec_heading">SPI and I2C peripherals</span>
+             </div>
+           </div>
+           <div class="6u">
+             <div class="single_spec">
+              <span class="icon fa-check-square-o bullet_features"></span>
+              <span class="spec_heading">Open source iOS and Android SDKs</span>
+              <div class="spec_details">
+                We have written the SDK and provided you some sample apps for iOS (Android coming soon) so you can get started on quickly
+              </div>
+            </div>
+            <div class="single_spec">
+              <span class="icon fa-check-square-o bullet_features"></span>
+              <span class="spec_heading">32KB of flash storage</span>
+              <div class="spec_details">
+                (4KB reserved for the bootloader)
+              </div>
+            </div>
+            <div class="single_spec">
+              <span class="icon fa-check-square-o bullet_features"></span>
+              <span class="spec_heading">No programming cable required</span>
+              <div class="spec_details">
+                Just plug it in and get started. It's that simple
+              </div>
+            </div>
+            <div class="single_spec">
+              <span class="icon fa-check-square-o bullet_features"></span>
+              <span class="spec_heading">12 digital I/O pins</span>
+              <div class="spec_details">
+                7 of these can be used as PWM
+              </div>
+            </div>
+            <div>
+              <span class="icon fa-check-square-o bullet_features"></span>
+              <span class="spec_heading">6 analog I/O pins</span>
+            </div>
+          </div>
         </div>
-			</div>
+      </div>
 		</section>
 
 	</article>
 
 	<!-- CTA -->
-	<section id="cta">
+	<section id="cta" class="title">
 		<div>
-			<a href="https://www.crowdsupply.com/revealing-hour/tah-open-ble-arduino-board" target="_blank" class="button special pre-order-bg" style="padding: 0em 0.75em">Pre-order now</a>
+			<a href="https://www.crowdsupply.com/revealing-hour/tah-open-ble-arduino-board" target="_blank" class="button special pre-order-bg pre-order-button">Pre-order now</a>
 		</div><br/>
 
-		<div style="font-size:150%">Stay updated. Sign up for our newsletter.</div><br/>
+		<div class="new">Stay updated. Sign up for our newsletter.</div><br/>
 
 		<footer>
 			<form action="http://revealinghour.us8.list-manage.com/subscribe/post?u=bca3a340d44da6d9f4123ed9d&amp;id=00bbb728bf" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -378,5 +284,15 @@
 
 		<span class="copyright">&copy; <a href="http://revealinghour.in">Revealing Hour Creations.</a> All rights reserved. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
 	</footer>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-36872186-2', 'auto');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+  </script>
 </body>
 </html>
