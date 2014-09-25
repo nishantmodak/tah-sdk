@@ -50,15 +50,11 @@
 		font-size: 75%;
 	}
 
-	#apple_badge {
+	.apple_badge {
 		border-bottom: none;
 	}
 
-	#tah_logo {
-		vertical-align: middle;
-	}
-
-	#tah_logo_text {
+	.tah_logo_text {
 		vertical-align: middle;
 	}
 
@@ -72,16 +68,16 @@
 		}
 	}
 
-	.sprite { background: url('sprite.png') no-repeat top left; width: 110px; height: 110px;  } 
-	.sprite.Bluetooth { background-position: 0px 0px;  } 
-	.sprite.Android { background-position: 0px -120px;  } 
-	.sprite.Arduino { background-position: 0px -240px;  } 
-	.sprite.Beacon { background-position: 0px -360px;  } 
+	.sprite { background: url('sprite.png') no-repeat top left; width: 100px; height: 100px;  } 
+	.sprite.Android { background-position: 0px 0px;  } 
+	.sprite.Arduino { background-position: 0px -120px;  } 
+	.sprite.Beacon { background-position: 0px -240px;  } 
+	.sprite.BLE { background-position: 0px -360px;  } 
 	.sprite.iOS { background-position: 0px -480px;  } 
 	.sprite.OpenSoftware { background-position: 0px -600px;  } 
 	.sprite.PlugPlay { background-position: 0px -720px;  } 
 	.sprite.TahGrey { background-position: 0px -840px;  } 
-	.sprite.USB { background-position: 0px -960px;  } 
+	.sprite.USB20 { background-position: 0px -960px;  } 
 	
 	.example_step {
 		border-bottom: 1px solid lightgray;
@@ -89,13 +85,8 @@
 		margin-bottom: 1.4em;
 	}
 
-	.feature_icons_std img {
-		/*padding-left: 0;*/
-		/*max-width: 95px;*/
-	}
-
-	#feature_icons_tah {
-		/*margin: 1% 0% 1% 2%;*/
+	.feature_icons_std {
+		padding-bottom: 5%;
 	}
 
 	.specs_container {

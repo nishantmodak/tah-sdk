@@ -1,4 +1,4 @@
-!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <!--
   Twenty 1.0 by HTML5 UP
   html5up.net | @n33co
@@ -12,19 +12,14 @@
   <meta name="keywords" content="tah, bluetooth, low energy, bluetooth low energy, hardware, open hardware, rhc, revealing hour creations" />
 
   <noscript>
-    <link rel="stylesheet" href="css/skel.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/style-noscript.css" />
+    <link rel="stylesheet" href="css/skel.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/style-noscript.min.css" />
     <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css"> -->
   </noscript>
 
   <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery.dropotron.min.js"></script>
-  <script src="js/skel.min.js"></script>
-  <script src="js/skel-layers.min.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/mailchimp.js"></script> 
+  <script src="js/application.js"></script>
   <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
   <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
   <script>
@@ -32,31 +27,29 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
     ga('create', 'UA-36872186-2', 'auto');
     ga('require', 'displayfeatures');
     ga('send', 'pageview');
-
   </script>
 </head>
 <body>
   
   <!-- Header -->
-  <header id="header">
-    <h1 id="logo"><a href="index.html">TAH <span>by RHC</span></a></h1>
+  <header id="header" class="reveal">
+    <h1 id="logo"><a href="../index.html"><img src="../images/tah_new.jpg" width="30px" class="tah_logo_text"/><span class="tah_logo_text"> <strong>TAH</strong></span></a></h1>
     <nav id="nav">
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#main">What is TAH?</a></li>
-        <li class="current"><a href="start.html">Start</a></li>
-        <li><a href="https://www.crowdsupply.com/revealing-hour-creations/tah" class="button special">Pre-order</a></li>
+        <li id="menu_banner"><a href="index.html">Home</a></li>
+        <li id="start" class="current"><a href="#">Start</a></li>
+        <li><a href="https://www.crowdsupply.com/revealing-hour/tah-open-ble-arduino-board" target="_blank" class="button special pre-order-bg">Pre-order now</a></li>
       </ul>
     </nav>
   </header>
 
+
   <article id="main">
 
-    <center><h2><strong>Getting started with Tah</strong></h2></center>
+    <center style="margin-top:5%;"><h2><strong>Getting started with Tah</strong></h2></center>
 
     <section class="wrapper style4 container">
 
@@ -91,8 +84,7 @@
         <div class="12u">
           <h4><strong><a name="user-content-step-2-install-our-application" class="anchor" href="#step-2-install-our-application" aria-hidden="true"><span class="octicon octicon-link"></span></a>Step 2: Install our application</strong></h4>
           <div class="app_links">
-            <a href="#" target="_blank"><img src="./images/AppleBadge.svg" width="172" height="60" alt="Apple" style="max-width:100%;"></a>
-            <a href="#" target="_blank"><img src="./images/AndroidBadge.jpg" width="172" height="60" alt="Android" style="max-width:100%;"></a>
+            <a href="#" target="_blank" class="apple_badge"><img src="./images/AppleBadge.png" width="172" height="60" alt="Apple" style="max-width:100%;"></a>
           </div>
         </div>
       </div>
