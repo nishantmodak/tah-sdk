@@ -68,16 +68,16 @@
 		}
 	}
 
-	.sprite { background: url('sprite.png') no-repeat top left; width: 100px; height: 100px;  } 
+	.sprite { background: url('sprite.png') no-repeat top left; width: 95px; height: 95px;  } 
 	.sprite.Android { background-position: 0px 0px;  } 
-	.sprite.Arduino { background-position: 0px -120px;  } 
-	.sprite.Beacon { background-position: 0px -240px;  } 
-	.sprite.BLE { background-position: 0px -360px;  } 
-	.sprite.iOS { background-position: 0px -480px;  } 
-	.sprite.OpenSoftware { background-position: 0px -600px;  } 
-	.sprite.PlugPlay { background-position: 0px -720px;  } 
-	.sprite.TahGrey { background-position: 0px -840px;  } 
-	.sprite.USB20 { background-position: 0px -960px;  } 
+	.sprite.Arduino { background-position: 0px -105px;  } 
+	.sprite.Beacon { background-position: 0px -210px;  } 
+	.sprite.Bluetooth { background-position: 0px -315px;  } 
+	.sprite.iOS { background-position: 0px -420px;  } 
+	.sprite.OpenHW { background-position: 0px -525px;  } 
+	.sprite.OpenSW { background-position: 0px -630px;  } 
+	.sprite.PlugPlay { background-position: 0px -735px;  } 
+	.sprite.USB { background-position: 0px -840px;  } 
 	
 	.example_step {
 		border-bottom: 1px solid lightgray;
@@ -140,7 +140,6 @@
 	.specs_row {
 		border: 1px solid lightgray;
 		padding: 2% 0% 2% 0%;
-		border-radius: 10px;
 		margin: 0.5em !important;
 		padding-right: 3%
 	}
