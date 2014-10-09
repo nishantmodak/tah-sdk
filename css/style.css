@@ -41,6 +41,12 @@
 		font-size: 110%;
 	}
 
+	.example_step {
+		border-bottom: 1px solid lightgray;
+		padding-bottom: 1.4em;
+		margin-bottom: 1.4em;
+	}
+
 	.pre-order-bg {
 		background-color: #83d3c9 !important;
 	}
@@ -50,7 +56,7 @@
 		font-size: 75%;
 	}
 
-	.apple_badge {
+	.img_hyperlink {
 		border-bottom: none;
 	}
 
@@ -62,6 +68,11 @@
 		background: #f3f6fa;
 	}
 
+	.media_logos {
+		padding: 1%;
+		max-width: 250px;
+	}
+
 	@-moz-document url-prefix() {
     .goo {
 			padding: 0.6em 0px !important;
@@ -69,15 +80,15 @@
 	}
 
 	.sprite { background: url('sprite.png') no-repeat top left; width: 95px; height: 95px;  } 
-	.sprite.Android { background-position: 0px 0px;  } 
-	.sprite.Arduino { background-position: 0px -105px;  } 
-	.sprite.Beacon { background-position: 0px -210px;  } 
-	.sprite.Bluetooth { background-position: 0px -315px;  } 
-	.sprite.iOS { background-position: 0px -420px;  } 
-	.sprite.OpenHW { background-position: 0px -525px;  } 
-	.sprite.OpenSW { background-position: 0px -630px;  } 
-	.sprite.PlugPlay { background-position: 0px -735px;  } 
-	.sprite.USB { background-position: 0px -840px;  } 
+	.sprite.Android { background-position: 0px 0px;  }
+	.sprite.Arduino { background-position: 0px -105px;  }
+	.sprite.Beacon { background-position: 0px -210px;  }
+	.sprite.Bluetooth { background-position: 0px -315px;  }
+	.sprite.iOS { background-position: 0px -420px;  }
+	.sprite.OpenHW { background-position: 0px -525px;  }
+	.sprite.OpenSW { background-position: 0px -630px;  }
+	.sprite.PlugPlay { background-position: 0px -735px;  }
+	.sprite.USB { background-position: 0px -840px;  }
 	
 	.example_step {
 		border-bottom: 1px solid lightgray;
@@ -91,10 +102,6 @@
 
 	.specs_container {
 		margin-bottom:5em
-	}
-
-	#specs_title {
-		padding-top: 3em;
 	}
 
 	.pre-order-button {
@@ -129,19 +136,39 @@
 		padding-bottom: 1em;
 		}
 
-	#tah_powerup {
-		margin-top: -35%;
+	@media (max-width: 1500px) {
+		#tah_powerup, #tah_connect {
+			margin-top: -65%;
+		}
+	}
+
+	@media (max-width: 800px) {
+		#tah_powerup {
+			max-width: 60% !important;
+			margin-top: 0%;
+		}
+
+		#tah_connect {
+			margin-top: 0%;
+		}
 	}
 
 	.twitter_feed {
-		margin-top: 5%;
+		/*margin-top: 10%;*/
+	}
+
+	.section_title {
+		padding-top: 3em;
+	}
+
+	#specs_row_id {
+		margin: 9px !important;
 	}
 
 	.specs_row {
 		border: 1px solid lightgray;
 		padding: 2% 0% 2% 0%;
-		margin: 0.5em !important;
-		padding-right: 3%
+		padding-right: 3%;
 	}
 
 	.single_spec {
@@ -1205,7 +1232,7 @@
 				border-top: 0;
 			}
 
-		#topPanel .indent-1,
+		#topPanel .indent	,
 		#sidePanel .indent-1 {
 			display: inline-block;
 			width: 1em;
